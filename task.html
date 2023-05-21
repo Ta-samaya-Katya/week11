@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        padding: 10px;
+        margin: 10px;
+        border: 0;
+        box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+      }
+
+      button {
+        width: 100px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input id="digit" type="number" placeholder="Введите число" />
+    <input id="square" type="number" placeholder="Квадрат числа" disabled />
+    <button type="button" onclick="calcSquare()">Рассчитать</button>
+
+    <script>
+      const calcSquare = () => {
+        const digit = document.querySelector("#digit").value;
+        const squareDigit = Math.pow(digit, 2);
+        document.querySelector("#square").value = squareDigit;
+      };
+    </script>
+  </body>
+</html>
