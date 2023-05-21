@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Косметика</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+
+  <body>
+    <h1 class="title">Корзина</h1>
+    <div class="container__cards">
+      <div class="card">
+        <img class="card__img" src="./assets/images/1.jpeg" alt="Крем" />
+        <div class="card__characteristic">
+          <p class="card__name">Крем для лица</p>
+          <p class="card__description">
+            Крем для лица омолаживающий антивозрастной против морщин для
+            упругости кожи лица Ретинол + Церамиды
+          </p>
+        </div>
+        <p class="card__price" id="firstPrice">519</p>
+        <span class="currency">руб.</span>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="./assets/images/2.jpeg" alt="Шампунь" />
+        <div class="card__characteristic">
+          <p class="card__name">Шампунь</p>
+          <p class="card__description">
+            Профессиональный шампунь для окрашенных волос с кератином Color
+            R-Plex
+          </p>
+        </div>
+        <p class="card__price" id="secondPrice">249</p>
+        <span class="currency">руб.</span>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="./assets/images/3.jpeg" alt="Спрей" />
+        <div class="card__characteristic">
+          <p class="card__name">Спрей - масло</p>
+          <p class="card__description">
+            Спрей- масло для волос для волос с Амлой. Восстановление и питание.
+            Профессиональный уход за волосами.
+          </p>
+        </div>
+        <p class="card__price" id="thirdPrice">579</p>
+        <span class="currency">руб.</span>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="./assets/images/4.jpeg" alt="Крем" />
+        <div class="card__characteristic">
+          <p class="card__name">Солнцезащитный крем</p>
+          <p class="card__description">
+            Солнцезащитный крем для лица SPF 30 +. Профессиональная косметика
+            для защиты от солнца, spf для лица.
+          </p>
+        </div>
+        <p class="card__price" id="fourthPrice">459</p>
+        <span class="currency">руб.</span>
+      </div>
+
+      <div class="final-price">
+        <button class="button" onclick="useDiscount()" type="button">
+          Использовать купон на 20 %
+        </button>
+        <div id="totalPrice"></div>
+        <span class="currency">руб.</span>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
